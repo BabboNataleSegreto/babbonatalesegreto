@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
@@ -39,19 +40,15 @@ font-size: 48px;
             </div>
         </div>
     </div>
-    <div id="overlay" >  
-        <video id = "myVideo" width="100%" height="100%" controls>
-            <source src="Malgio1.mp4" type="video/mp4">
-        </video>  
+    <div id="overlay">  
+        <iframe id = "myVideo" width="100%" height="100%" src="" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
     </div>  
-     
 <script>
     document.onkeydown = function(evt) {
     evt = evt || window.event;
     if (evt.keyCode == 27) {
         document.getElementById("overlay").style.display = "none";
-        var vid = document.getElementById("myVideo"); 
-        vid.pause();
+        document.getElementById("myVideo").style.display = "none";
     }
     if (event.keyCode === 13) {
         document.getElementById("myButton").click();

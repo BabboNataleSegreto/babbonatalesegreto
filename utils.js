@@ -5,32 +5,30 @@ function myFunction() {
     document.getElementById("overlay").style.display = "block";
 
     var video = document.getElementById("myVideo");
-    video.src = "Malgio1.mp4";
 
     if(x == "Zenzero"){
-        video.src = "2.mp4";
+        video.src = "https://www.youtube.com/embed/8bb7n8eKPP8?rel=0";
     }
     if(x == "Pan di spagna"){
-        video.src = "3.mp4";
+        video.src = "https://www.youtube.com/embed/Z5zl7BPenfw?rel=0";
     }
     if(x == "Pandoro"){
-        video.src = "4.mp4";
+        video.src = "https://www.youtube.com/embed/VTFvcU2bSlo?rel=0";
     }
     if(x == "Rudolf"){
-        video.src = "6.mp4";
+        video.src = "https://www.youtube.com/embed/-0_MsnRo4fA?rel=0";
     }
     if(x == "Pan di stella"){
-        video.src = "7.mp4";
+        video.src = "https://www.youtube.com/embed/y5aqlwtr5Lk?rel=0";
     }
     if(x == "Nutella"){
-        video.src = "8.mp4";
+        video.src ="https://www.youtube.com/embed/r-n-UpS0-_4?rel=0";
     }
     if(x == "Panna cotta"){
-        video.src = "5.mp4";
+        video.src ="https://www.youtube.com/embed/b7b75J-1b8s?rel=0";
     }
     if(x == "Spumino"){
-        video.src = "1.mp4";
+        video.src = "https://www.youtube.com/embed/WuxrjABUZ2Y?rel=0";
     }
      
-    video.play();
 }
