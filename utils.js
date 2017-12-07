@@ -3,8 +3,10 @@ function myFunction() {
 
     x = document.getElementById("name").value;
     document.getElementById("overlay").style.display = "block";
+    
 
     var video = document.getElementById("myVideo");
+    video.src = "https://www.youtube.com/embed/DAGrhFf-2b0?autoplay=1"
 
     if(x == "Zenzero"){
         video.src = "https://www.youtube.com/embed/8bb7n8eKPP8?rel=0";
@@ -30,5 +32,7 @@ function myFunction() {
     if(x == "Spumino"){
         video.src = "https://www.youtube.com/embed/WuxrjABUZ2Y?rel=0";
     }
-     
+    $(document.getElementById('myVideo').contentWindow.document).keydown(function() {
+        document.getElementById("overlay").style.display = "none";
+    });
 }
