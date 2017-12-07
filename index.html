@@ -1,0 +1,62 @@
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src ="utils.js"> </script>
+<link rel="stylesheet" type="text/css" href="animation.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<style>
+h2 {
+font-family: 'Tangerine', serif;
+font-size: 48px;
+}
+</style>
+</head>
+<body>
+    <div id="snow">
+        <div class = "container-fluid full">
+            <div class = "col-sm-12 text-center">
+                <img src="minon.gif" title="this slowpoke moves" />
+            </div>
+            <div class = "row full">
+                <div class = "col-sm-8 right">
+                    <h2><font color = "white">Inserisci il tuo nome:</font></h2>
+                    <input type ="text" id="name">
+                    <button id="myButton" class = "button button3" type="button" onclick="myFunction()">Invia</button>
+                </div>
+                <div class = "col-sm-4 left">
+                    <img src="natale.gif" title="this slowpoke moves" />
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-sm-12 text-right bottom">
+                    <h3> <font color = "white">Sito a cura di: Simone Dutto --- Musiche e riprese a cura di: Daniele Sorba --- La parte gay: Lorenzo Martini</font></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="overlay" >  
+        <video id = "myVideo" width="100%" height="100%" controls>
+            <source src="Malgio1.mp4" type="video/mp4">
+        </video>  
+    </div>  
+     
+<script>
+    document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    if (evt.keyCode == 27) {
+        document.getElementById("overlay").style.display = "none";
+        var vid = document.getElementById("myVideo"); 
+        vid.pause();
+    }
+    if (event.keyCode === 13) {
+        document.getElementById("myButton").click();
+    }
+};
+</script>
+</body>
+</html>
