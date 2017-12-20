@@ -3,7 +3,7 @@ body { background-color:rgb(190, 9, 9); }
 #snow{
 	background: none;
 	font-family: Androgyne;
-	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+	background-image: url('snow.jpg'), url('snow1.jpg'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
 	height: 100%;
 	left: 0;
 	position: absolute;
